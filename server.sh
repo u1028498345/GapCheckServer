@@ -1,0 +1,1 @@
+gunicorn server:app -k aiohttp.worker.GunicornWebWorker -b 0.0.0.0:8004 -w 5 --threads 4 --max-requests 2000 --max-requests-jitter 2000
